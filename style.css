@@ -6,7 +6,7 @@ html {
   font-size: 100%; }
 
 .home {
-  background-image: linear-gradient(to bottom right, rgba(45, 131, 201, 0.507), #00fdf081), url(images/background.jpg);
+  background-image: linear-gradient(to bottom right, rgba(45, 131, 201, 0.507), #00fdf081), url(images/800794-full-screen-desktop-wallpaper-2560x1600-hd.jpg);
   height: 100vh;
   overflow: hidden;
   background-size: cover;
@@ -254,14 +254,171 @@ html {
   font-size: 3rem;
   color: white;
   font-family: cursive;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  animation: moveleft 2s; }
 
 .images-left {
   width: 40%;
   float: left;
-  margin-left: 5%; }
+  margin-left: 5%;
+  position: relative; }
 
 .images-right {
   width: 40%;
-  float: left;
-  margin-right: 5%; }
+  float: right;
+  margin-right: 5%;
+  position: relative; }
+
+.study {
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 13.4rem;
+  text-align: center;
+  color: white;
+  backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  width: 25rem;
+  display: block;
+  float: right;
+  perspective: 300rem;
+  transition: 1.5s ease;
+  transform: rotateY(-180deg);
+  background-image: linear-gradient(to bottom right, #00aeff, #0084ff);
+  margin-bottom: 3rem; }
+  .study h1 {
+    font-size: 2.5rem; }
+  .study p {
+    font-size: 1.5rem; }
+  .study-image:hover + .study {
+    transform: rotateY(0deg); }
+  .study-image:hover {
+    transform: rotateY(-180deg); }
+  .study-image {
+    position: absolute;
+    top: 0;
+    animation: in ease-in;
+    animation-duration: 2s;
+    left: 13.4rem;
+    backface-visibility: hidden;
+    height: 12rem;
+    width: 25rem;
+    display: block;
+    transition: 1.5s ease;
+    float: right;
+    margin-bottom: 3rem; }
+
+.code {
+  height: 12rem;
+  position: absolute;
+  top: 15rem;
+  left: 13.4rem;
+  transform: rotateX(-180deg);
+  text-align: center;
+  color: white;
+  width: 25rem;
+  display: block;
+  float: right;
+  margin-bottom: 3rem;
+  perspective: 300rem;
+  transition: 1.5s ease;
+  transform: rotateY(-180deg);
+  background-image: linear-gradient(to bottom right, #00aeff, #0084ff);
+  backface-visibility: hidden;
+  background-color: red; }
+  .code h1 {
+    font-size: 2.5rem; }
+  .code p {
+    font-size: 1.5rem; }
+  .code-image:hover + .code {
+    transform: rotateY(0deg); }
+  .code-image:hover {
+    transform: rotateY(-180deg); }
+  .code-image {
+    position: absolute;
+    top: 15rem;
+    animation: in ease-in;
+    animation-duration: 2s;
+    left: 13.4rem;
+    backface-visibility: hidden;
+    height: 12rem;
+    width: 25rem;
+    display: block;
+    transition: 1.5s ease;
+    float: right;
+    margin-bottom: 3rem; }
+
+.sf {
+  height: 12rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  backface-visibility: hidden;
+  transform: rotateX(-180deg);
+  text-align: center;
+  color: white;
+  width: 25rem;
+  display: block;
+  perspective: 300rem;
+  transition: 1.5s ease;
+  transform: rotateY(-180deg);
+  background-image: linear-gradient(to bottom right, #00aeff, #0084ff);
+  margin-bottom: 3rem;
+  background-color: red; }
+  .sf h1 {
+    font-size: 2.5rem; }
+  .sf p {
+    font-size: 1.5rem; }
+  .sf-image:hover + .sf {
+    transform: rotateY(0deg); }
+  .sf-image:hover {
+    transform: rotateY(-180deg); }
+  .sf-image {
+    position: absolute;
+    top: 0rem;
+    animation: in ease-in;
+    animation-duration: 2s;
+    left: 0rem;
+    backface-visibility: hidden;
+    height: 12rem;
+    width: 25rem;
+    display: block;
+    transition: 1.5s ease;
+    margin-bottom: 3rem; }
+
+.web {
+  height: 12rem;
+  position: absolute;
+  top: 15rem;
+  left: 0rem;
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: white;
+  width: 25rem;
+  display: block;
+  perspective: 300rem;
+  transition: 1.5s ease;
+  transform: rotateY(-180deg);
+  background-image: linear-gradient(to bottom right, #00aeff, #0084ff); }
+  .web h1 {
+    font-size: 2.5rem; }
+  .web p {
+    font-size: 1.5rem; }
+  .web-image:hover + .web {
+    transform: rotateY(0deg); }
+  .web-image:hover {
+    transform: rotateY(-180deg); }
+  .web-image {
+    position: absolute;
+    top: 15rem;
+    animation: in ease-in;
+    animation-duration: 2s;
+    left: 0rem;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    height: 12rem;
+    width: 25rem;
+    display: block;
+    transition: 1.5s ease;
+    margin-bottom: 3rem; }
